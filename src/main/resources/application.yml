@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hdfc-life-policy-ledger
+
+  profiles:
+    active: dev
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/index.html
